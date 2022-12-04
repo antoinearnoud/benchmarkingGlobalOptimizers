@@ -1,6 +1,8 @@
 # NLOpt algorithms on Test Functions
 Using the NLOpt library to minimize test functions (2 and 10 dimensional domains). 
 
+See NLOpt documentation [here](https://nlopt.readthedocs.io/en/latest/)
+
 ## CRES2 (Global + No gradient)
 * Name: NLOPT_GN_CRS2_LM
 * Precision: 
