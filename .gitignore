@@ -1,6 +1,9 @@
 # MacOS
 .DS_Store
 
+# Result folders
+results/
+
 # Prerequisites
 *.d
 
