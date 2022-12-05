@@ -41,7 +41,7 @@ echo ""
 # ==============================================
 echo "running program: minimizing test functions with local algorithms..."
 sleep 2
-./main
-echo ""
-cp results_local_algo_all.dat ../results/results_local_algo_all.dat
-echo "Local aglo optimization on test functions done. See results_local_algo_all.txt file in results directory."
+#./main
+#echo ""
+#cp results_local_algo_all.dat ../results/results_local_algo_all.dat
+#echo "Local aglo optimization on test functions done. See results_local_algo_all.txt file in results directory."
