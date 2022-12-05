@@ -45,3 +45,6 @@ sleep 2
 #echo ""
 #cp results_local_algo_all.dat ../results/results_local_algo_all.dat
 #echo "Local aglo optimization on test functions done. See results_local_algo_all.txt file in results directory."
+echo "submit job"
+sbatch sbatch_localsearch_testfunctions.sh
+echo "   ...job submitted. Results will be directly copied to folder results."
