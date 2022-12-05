@@ -38,8 +38,8 @@ All the above are polished with either Nelder-Mead (from NLopt) or Bobyqa (from 
 For reproducibility the seed is set at iseed = 123456
 
 ## RUN THE PROGRAM
-Run `bash script_nlopt_testfunctions.sh`: this will run the Monte Carlo implementation and save the results in the (newly created) folder `results`. 
+Run `bash script_nlopt_testfunctions.sh`: this will run the Monte Carlo implementation and save the results in the (newly created) folder `results`. Note: the script submit a SLURM job through the command `sbatch` (penultimate line of the file). You might need to edit this if running on another platform.
 
-This implementation can be run in parallel (through OpenMP).
+This implementation is run in parallel by default (using OpenMP).
 
-It takes approximately XX minutes to run (on Yale cluster) on the login node.
+It takes approximately 30 minutes to run in parallel on 25 CPUs.
