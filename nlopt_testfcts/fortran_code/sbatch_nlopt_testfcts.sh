@@ -10,3 +10,4 @@
 
 # copy results into results folder
 cp nlopt_testfcts.txt ../results/nlopt_testfcts.txt
+cp nlopt_testfcts_pre_polish.txt ../results/nlopt_testfcts_pre_polish.txt
