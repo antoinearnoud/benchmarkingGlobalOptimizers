@@ -5,7 +5,12 @@ This folder contains the code to run three local algorithms (Nelder-MEad, DFNLS,
 The files are the following:
 - `testFunctions.f90` contains the code of each of the test functions
 - `objective.f90` is a general function which calls the right test function depending on the loop index
+- `myparams.f90` contains parameters related to the objective function (dimensions, theoretical minimum, theoretical argmin, lower and upper bounds of the domain)
+- `minimize.f90` contains the code of the minimization routines: amoeba (Nelder-Mead), bobyqa_h (DFNLS), and DFPMIN (see below)
+- `genericParams.f90` contains variables needed for the optimization (tolerance, range of optimization domain, size of the simplex for Amoeba, etc.)
 - `monteCarloParams.f90` contains dummies (for loops in the main program), maximum number of evaluations, and the number of iterations of the Monte Carlo experiment
+- `simplex.f90`, `nrtype.f90`, `nrutil.f90`, `utilities` are auxiliary functions (create a simplex, define types, etc.)
+- `main.f90` is the main program that runs the opimizations and saves the results
 
 ## Amoeba
 the code comes from the original Tiktak code, with modification to return {x_min, f_min} even if max number of iterations is reached. 
