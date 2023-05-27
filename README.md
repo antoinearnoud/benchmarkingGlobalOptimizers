@@ -1,2 +1,8 @@
-# benchmarkingGlobalOptimizers
-Code of the paper Benchmarking Global Optimizers - [NBER working paper link](https://www.nber.org/papers/w26340)
+# Benchmarking Global Optimizers
+Antoine Arnoud, Fatih Guvenen & Tatjana Kleineberg, 2022 (_submitted_)
+
+This repo contains the code of the [Benchmarking Global Optimizers  (NBER working paper)](https://www.nber.org/papers/w26340)
+
+**Abstract**
+
+We benchmark seven global optimization algorithms by comparing their performance on challenging multidimensional test functions as well as a method of simulated moments estimation of a panel data model of earnings dynamics. Five of the algorithms are taken from the popular NLopt open-source library: (i) Controlled Random Search with local mutation (CRS), (ii) Improved Stochastic Ranking Evolution Strategy (ISRES), (iii) Multi-Level Single-Linkage (MLSL) algorithm, (iv) Stochastic Global Optimization (StoGo), and (v) Evolutionary Strategy with Cauchy distribution (ESCH). The other two algorithms are versions of TikTak, which is a multistart global optimization algorithm used in some recent economic applications. For completeness, we add three popular local algorithms to the comparison—the Nelder-Mead downhill simplex algorithm, the Derivative-Free Non-linear Least Squares (DFNLS) algorithm, and a popular variant of the Davidon-Fletcher-Powell (DFPMIN) algorithm. To give a detailed comparison of algorithms, we use a set of benchmarking tools recently developed in the applied mathematics literature. We find that the success rate of many optimizers vary dramatically with the characteristics of each problem and the computational budget that is available. Overall, TikTak is the strongest performer on both the math test functions and the economic application. The next-best performing optimizers are StoGo and CRS for the test functions and MLSL for the economic application.
