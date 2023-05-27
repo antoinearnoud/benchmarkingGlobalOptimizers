@@ -1,5 +1,5 @@
 module monteCarloParams
-! This module should contain counters, and stuff from myParams.f90
+! This module contains counters, the varaible storing the maximum number of evaluations, and the number of iterations. 
 
 USE NRTYPE
 IMPLICIT NONE
