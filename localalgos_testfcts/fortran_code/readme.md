@@ -1,25 +1,27 @@
 # Local algorithms on Test Functions
 
+This folder contains the code to run three local algorithms (Nelder-MEad, DFNLS, DFPMIN) on 4 test functions (Levi, Griewank, Rosenbrock, Rastrigin).
+
 ## Amoeba
-comes from original tiktak code, with modification to return {x_min, f_min} even if max number of iterations is reached. 
+the code comes from the original Tiktak code, with modification to return {x_min, f_min} even if max number of iterations is reached. 
 * Precision: 1.0D-18
-* Max iterations: max_evalstep - dim (not sure why again)
+* Max iterations: max_evalstep - dim
 
 ## DFNLS
-comes from tiktak code (with modification?) [also called boyqa_h]
+the code comes from original Tiktak code (with modifications) (the optimization is also called boyqa_h)
 * precision
-    * rhobeg =  (MINVAL(p_bound(:,2)-p_bound(:,1))/2.5_DP)/(4*itratio) with itratio = 1
-    * rhoend  = 1.0D-8
+    * `rhobeg =  (MINVAL(p_bound(:,2) - p_bound(:,1)) / 2.5_DP) / (4*itratio)` with `itratio = 1`
+    * `rhoend  = 1.0D-8`
 
-* p_ninterppt = 2*dim + 1
+* `p_ninterppt = 2*dim + 1`
 * max iterations: max_evalstep
 * pnmom = 1
 
 ## DFPMIN
-comes from Numerical Recipes with some modifications (?)
+comes from Numerical Recipes with some modifications
 * Precision: 1.0D-12
 
-## Note:
+## Notes:
 **Counters**
 - counter: implemented in each of the test functions, incremented by +1 each time the function is called
 - algo_counter: argument in amoeba minimization and dfpmin minimization; 
