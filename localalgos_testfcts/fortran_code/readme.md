@@ -2,6 +2,11 @@
 
 This folder contains the code to run three local algorithms (Nelder-MEad, DFNLS, DFPMIN) on 4 test functions (Levi, Griewank, Rosenbrock, Rastrigin).
 
+The files are the following:
+- `testFunctions.f90` contains the code of each of the test functions
+- `objective.f90` is a general function which calls the right test function depending on the loop index
+- `monteCarloParams.f90` contains dummies (for loops in the main program), maximum number of evaluations, and the number of iterations of the Monte Carlo experiment
+
 ## Amoeba
 the code comes from the original Tiktak code, with modification to return {x_min, f_min} even if max number of iterations is reached. 
 * Precision: 1.0D-18
